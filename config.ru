@@ -25,7 +25,7 @@ STR
       tempfile.open
       body = tempfile.read.chomp
       tempfile.close!
-      [200, { 'Content-Type' => 'text/plain' }, body]
+      [200, { 'Content-Type' => 'text/plain' }, [body]]
     end
   end
 
